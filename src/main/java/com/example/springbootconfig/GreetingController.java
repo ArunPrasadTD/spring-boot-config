@@ -28,6 +28,6 @@ public class GreetingController {
     @GetMapping("/greeting")
     public String greeting(){
 
-        return dbSettings.getConnection();
+        return dbSettings.getConnection()+"\n"+dbSettings.getHost();
     }
 }
